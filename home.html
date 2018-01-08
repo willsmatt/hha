@@ -15,7 +15,7 @@
 <body>
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-      <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+      <div class="off-canvas position-right hide-for-large-only" id="offCanvasRight" data-off-canvas>
         <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
           <li>
             <a href="#">Hitachi Mobile</a>
@@ -69,7 +69,7 @@
           </div>
         </div>
 
-        <div id="main-nav" class="top-bar">
+        <div id="main-nav" class="top-bar show-for-large">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
               <li class="menu-text">Hitachi Healthcare America</li>
@@ -148,54 +148,137 @@
                 <div class="dropdown-pane bottom" id="customer-support" data-dropdown data-hover-delay="0" data-options="closeOnClick:true; hover: true; hoverPane: true; vOffset:11,">
                   <div class="grid-x expanded">
                     <div class="large-3 cell">
+                      <span class="nav-title"><a href="#">Customer Service</a></span>
+
+                    </div>
+                    <div class="large-3 cell">
+                      <span class="nav-title"><a href="#">Customer Account</a></span>
                       <ul class="menu vertical">
-                        <li><a href="#">no</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Product Manuals/Materials</a></li>
+                        <li><a href="#">Self Learning</a></li>
+                        <li><a href="#">E-Store</a></li>
                       </ul>
                     </div>
                     <div class="large-3 cell">
-                      <ul class="menu vertical">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
+                      <span class="nav-title"><a href="#">Architecty Account</a></span>
                     </div>
                     <div class="large-3 cell">
-                      <ul class="menu vertical">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
-                      <ul class="menu vertical">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
-                    </div>
-                    <div class="large-3 cell">
-                      <ul class="menu vertical">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
+                      <span class="nav-title"><a href="#">Advanced Marketing Materials</a></span>
+                      <span class="nav-title"><a href="#">Hitachi Institute for MR Technologiests</a></span>
                     </div>
                   </div>
 
                 </div>
               </li>
-              <li><a href="#">Contact</a></li>
+
+              <li class="mega-menu"><a href="#" data-toggle="contact-request">Contact</a>
+                <div class="dropdown-pane bottom" id="contact-request" data-dropdown data-hover-delay="0" data-options="closeOnClick:true; hover: true; hoverPane: true; vOffset:11">
+                  <form class="login-request">
+                    <div class="grid-x expanded">
+                      <div class="large-7 cell">
+                        <div class="grid-x grid-padding-x expanded">
+                          <div class="large-12 cell">
+                            <h3>Request Information</h3>
+                          </div>
+                          <div class="large-6 cell">
+                            <label>First Name
+                               <input type="text" placeholder="First Name">
+                             </label>
+                            <label>Last Name
+                               <input type="text" placeholder="Last Name">
+                             </label>
+                            <label>Email
+<input type="email" placeholder="Email">
+</label>
+                            <label>Phone
+<input type="text" placeholder="Phone">
+</label>
+                          </div>
+                          <div class="large-6 cell">
+                            <label>State
+  <select>
+    <option value="husker">Select State</option>
+    <option value="husker">Select Products</option>
+  </select>
+</label>
+                            <label>Zip Code
+         <input type="text" placeholder="Zip">
+       </label>
+                            <label>Company
+<input type="text" placeholder="Company">
+</label>
+                            <label>City
+<input type="text" placeholder="City">
+</label>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="large-5 cell">
+                        <div class="grid-x grid-padding-x expanded">
+                          <div class="large-12 cell">
+                            <h3>Product Information</h3>
+                            <p>I am interested in purchasing a Hitachi product and would like more information</p>
+                          </div>
+                          <div class="large-6 cell">
+                            <label>MRI
+  <select>
+    <option value="husker">Select Products</option>
+    <option value="husker">Select Products</option>
+  </select>
+</label>
+                            <label>Ultrasound
+<select>
+<option value="husker">Select Products</option>
+<option value="husker">Select Products</option>
+</select>
+</label>
+                            <label>X-Ray
+<select>
+<option value="husker">Select Products</option>
+<option value="husker">Select Products</option>
+</select>
+</label>
+
+
+                          </div>
+                          <div class="large-6 cell">
+                            <label>CT
+                            <select>
+                            <option value="husker">Select Products</option>
+                            <option value="husker">Select Products</option>
+                            </select>
+                            </label>
+                            <label>VNA
+  <select>
+    <option value="husker">Select Products</option>
+    <option value="husker">Select Products</option>
+  </select>
+</label>
+                            <input type="submit" class="button secondary">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                  </form>
+                </div>
+
+              </li>
               <li><a href="#">Login</a></li>
+
             </ul>
           </div>
 
         </div>
 
 
-        <div class="title-bar hide-for-medium">
+        <div class="title-bar hide-for-large">
           <div class="title-bar-left">
 
-            <span class="title-bar-title">Foundation</span>
+            <span class="title-bar-title">Hitachi Healthcare America</span>
           </div>
           <div class="title-bar-right">
             <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
@@ -209,162 +292,326 @@
             <div class="grid-x" data-magellan-target="case-studies">
               <div class="large-12 cell">
                 <div class="hha-slider home-slider">
-                  <div>
-                    <div class="img-bg" style="background:url(img/hero-bg.png);"></div>
+                  <div style="background-image:url(img/hero-bg.png);">
+
                     <div class="grid-container">
-                      <div class="grid-x grid-padding-x hha-slider-item">
+                      <div class="grid-x grid-padding-x hha-slider-item align-middle">
 
                         <div class="large-8 cell">
-                          <h2>How the Right Imaging Equipment Helps a Small-Town Hospital Deliver Big-City Medicine</h2>
+                          <h2>To us, it's all about improving your image</h2>
                           <hr align="left" class="attract">
-                          <p>When it comes to ensuring patients receive the best possible imaging experience, Star Valley Medical Center in Afton, Wyo. went the extra mile so that patients don’t have to.</p>
+                          <p class="lead">Our innovative imaging systems deliver superb image quality, safely and efficiently</p>
+                          <a href="#" class="button secondary">View Products</a>
                         </div>
                       </div>
                     </div>
 
                   </div>
-                  <div>
-                    <div class="img-bg" style="background:url(img/hero-bg.png);"></div>
+                  <div style="background-image:url(img/hero-bg.png);">
+
                     <div class="grid-container">
                       <div class="grid-x grid-padding-x hha-slider-item">
 
                         <div class="large-8 cell">
-                          <h2>How the Right Imaging Equipment Helps a Small-Town Hospital Deliver Big-City Medicine</h2>
+                          <h2>Innovating Healthcare, Embracing the Future</h2>
                           <hr align="left" class="attract">
-                          <p>When it comes to ensuring patients receive the best possible imaging experience, Star Valley Medical Center in Afton, Wyo. went the extra mile so that patients don’t have to.</p>
+                          <p class="lead">For a society where all can enjoy a secure, safe, healthy way of life</p>
+                          <a href="#" class="button secondary">Learn More</a>
                         </div>
                       </div>
                     </div>
 
                   </div>
+                  <div style="background-image:url(img/hero-bg.png);">
 
+                    <div class="grid-container">
+                      <div class="grid-x grid-padding-x hha-slider-item align-middle">
+
+                        <div class="large-8 cell">
+                          <h2>The Future is Open to Suggestions</h2>
+                          <hr align="left" class="attract">
+                          <p class="lead">Hitachi recognizes that healthcare is an essential part of social infrastructure to support human life in the 21st century</p>
+                          <a href="#" class="button secondary">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
 
           </section>
 
-          <section class="row-wrapper">
+          <section id="home-products" class="row-wrapper section-padding odd">
 
             <div class="grid-container">
-              <div id="gallery" class="grid-x grid-padding-x" data-magellan-target="gallery">
-                <div class="large-4 medium-6 small-12 cell">
-                  <a class="card gallery">
-                    <div class="card-title">
-                      <span>Radiology</span>
-                    </div>
-
-                    <div class="card-section">
-                      <i class="fa fa-picture-o" aria-hidden="true"></i>
-                      <span>11 Images</span>
-                    </div>
-                    <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
-                    </div>
-                  </a>
+              <!--Products -->
+              <div class="grid-x grid-padding-x">
+                <div class="large-6 cell">
+                  <hr align="left" class="attract">
+                  <h2>Products</h2>
+                  <p>Maecenas maximus bibendum orci sit amet hendrerit. Etiam aliquet risus erat, a dignissim lorem dictum at.</p>
                 </div>
-                <div class="large-4 medium-6 small-12 cell">
-                  <a class="card gallery">
-                    <div class="card-title">
-                      <span>Radiology</span>
-                    </div>
-
-                    <div class="card-section">
-                      <i class="fa fa-picture-o" aria-hidden="true"></i>
-                      <span>11 Images</span>
-                    </div>
-                    <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
-                    </div>
-                  </a>
-                </div>
-                <div class="large-4 medium-6 small-12 cell">
-                  <a class="card gallery">
-                    <div class="card-title">
-                      <span>Radiology</span>
-                    </div>
-
-                    <div class="card-section">
-                      <i class="fa fa-picture-o" aria-hidden="true"></i>
-                      <span>11 Images</span>
-                    </div>
-                    <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
-                    </div>
-                  </a>
-                </div>
-                <div class="large-4 medium-6 small-12 cell">
-                  <a class="card gallery">
-                    <div class="card-title">
-                      <span>Radiology</span>
-                    </div>
-
-                    <div class="card-section">
-                      <i class="fa fa-picture-o" aria-hidden="true"></i>
-                      <span>11 Images</span>
-                    </div>
-                    <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
-                    </div>
-                  </a>
-                </div>
-                <div class="large-4 medium-6 small-12 cell">
-                  <a class="card gallery">
-                    <div class="card-title">
-                      <span>Radiology</span>
-                    </div>
-
-                    <div class="card-section">
-                      <i class="fa fa-picture-o" aria-hidden="true"></i>
-                      <span>11 Images</span>
-                    </div>
-                    <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
-                    </div>
-                  </a>
-                </div>
-
-
-
-
               </div>
               <div class="grid-x grid-padding-x">
-                <div class="large-12 cell">
-                  <hr align="left" class="attract">
-                  <h2>Tech Specs</h2>
-                  <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed, venenatis at ipsum. Mauris id suscipit mauris. Pellentesque eleifend eleifend ex. Proin eu
-                    arcu maximus, mattis erat et, viverra neque. Fusce mollis libero eu nisi porttitor posuere. Duis vel finibus nunc. Etiam a lorem mi. Morbi congue consectetur lorem, eu consequat erat aliquam vestibulum. Maecenas at diam ac quam tristique
-                    facilisis non vitae mauris. Sed feugiat sit amet justo in ultricies. Donec hendrerit tincidunt massa, sed feugiat lorem cursus vel. Proin nec velit urna.</p>
 
-                </div>
-                <div class="large-6 cell">
-                  <h5>Title of spec</h5>
-                  <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed</p>
+                <div class="large-4 medium-6 small-12 cell">
+                  <a class="card blur-card">
+                    <div class="card-front">
+                      <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
 
-                  <h5>Title of spec</h5>
-                  <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed</p>
 
-                  <h5>Title of spec</h5>
-                  <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed</p>
+                      <div class="card-section text-center">
+                        <hr align="center" class="attract mini">
+                        <h4>CT</h4>
+                      </div>
 
-                  <h5>Title of spec</h5>
-                  <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed</p>
-                </div>
-                <div class="large-6 cell">
-                  <h5>Title of spec</h5>
-                  <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet
-                    vulputate sed</p>
-
-                  <h5>Title of spec</h5>
-                  <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet
-                    vulputate sed</p>
-
-                  <h5>Title of spec</h5>
-                  <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet
-                    vulputate sed</p>
+                    </div>
+                    <div class="card-back text-center">
+                      <div class="data">
+                        <hr align="center" class="attract mini">
+                        <h4 class="name">CT</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <span class="download-btn">view all</span>
+                      </div>
+                    </div>
+                  </a>
                 </div>
 
+
+
+                <div class="large-4 medium-6 small-12 cell">
+                  <a class="card blur-card">
+                    <div class="card-front">
+                      <div class="img" style="background:url('img/product-test.jpg');"></div>
+
+
+                      <div class="card-section text-center">
+                        <hr align="center" class="attract mini">
+                        <h4>MR</h4>
+                      </div>
+
+                    </div>
+                    <div class="card-back text-center">
+                      <div class="data">
+                        <hr align="center" class="attract mini">
+                        <h4 class="name">MR</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <span class="download-btn">view all</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="large-4 medium-6 small-12 cell">
+                  <a class="card blur-card">
+                    <div class="card-front">
+                      <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
+
+
+                      <div class="card-section text-center">
+                        <hr align="center" class="attract mini">
+                        <h4>Ultrasound</h4>
+                      </div>
+
+                    </div>
+                    <div class="card-back text-center">
+                      <div class="data">
+                        <hr align="center" class="attract mini">
+                        <h4 class="name">Ultrasound</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <span class="download-btn">view all</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="large-4 medium-6 small-12 cell">
+                  <a class="card blur-card">
+                    <div class="card-front">
+                      <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
+
+
+                      <div class="card-section text-center">
+                        <hr align="center" class="attract mini">
+                        <h4>Digital Radiology</h4>
+                      </div>
+
+                    </div>
+                    <div class="card-back text-center">
+                      <div class="data">
+                        <hr align="center" class="attract mini">
+                        <h4 class="name">Ditigal Radiology</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <span class="download-btn">view all</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="large-4 medium-6 small-12 cell">
+                  <a class="card blur-card">
+                    <div class="card-front">
+                      <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
+
+
+                      <div class="card-section text-center">
+                        <hr align="center" class="attract mini">
+                        <h4>Information Technology</h4>
+                      </div>
+
+                    </div>
+                    <div class="card-back text-center">
+                      <div class="data">
+                        <hr align="center" class="attract mini">
+                        <h4 class="name">Optical Topography</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <span class="download-btn">view all</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="large-4 medium-6 small-12 cell">
+                  <a class="card blur-card">
+                    <div class="card-front">
+                      <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
+
+
+                      <div class="card-section text-center">
+                        <hr align="center" class="attract mini">
+                        <h4>Optical Topography</h4>
+                      </div>
+
+                    </div>
+                    <div class="card-back text-center">
+                      <div class="data">
+                        <hr align="center" class="attract mini">
+                        <h4 class="name">Optical Topography</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <span class="download-btn">view all</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
 
               </div>
             </div>
+
           </section>
 
+          <section id="case-studies" class="row-wrapper">
 
+            <div class="grid-container">
+
+              <div class="grid-x" data-magellan-target="case-studies">
+                <div class="large-12 cell">
+                  <div class="hha-slider">
+                    <div>
+                      <div class="grid-x grid-padding-x hha-slider-item">
+
+                        <div class="large-4 cell">
+                          <img src="http://via.placeholder.com/350x250">
+                        </div>
+                        <div class="large-8 cell">
+                          <h3>How the Right Imaging Equipment Helps a Small-Town Hospital Deliver Big-City Medicine</h3>
+                          <hr align="left" class="attract mini">
+                          <p>When it comes to ensuring patients receive the best possible imaging experience, Star Valley Medical Center in Afton, Wyo. went the extra mile so that patients don’t have to.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="grid-x grid-padding-x">
+
+                        <div class="large-4 cell">
+                          LEFT
+                        </div>
+                        <div class="large-8 cell">
+                          RIGHT
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="grid-x grid-padding-x">
+
+                        <div class="large-4 cell">
+                          LEFT
+                        </div>
+                        <div class="large-8 cell">
+                          RIGHT
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="grid-x grid-padding-x">
+
+                        <div class="large-4 cell">
+                          LEFT
+                        </div>
+                        <div class="large-8 cell">
+                          RIGHT
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="row-wrapper section-padding">
+            <div class="grid-container">
+              <div class="grid-x grid-padding-x">
+                <div class="large-12 cell text-center">
+                  <h2>New Customer?</h2>
+                  <p>Let's get started.</p>
+                </div>
+                <div class="large-6 medium-6 cell">
+                  <label>First Name
+                     <input type="text" placeholder="First Name">
+                   </label>
+                  <label>Last Name
+                     <input type="text" placeholder="Last Name">
+                   </label>
+                  <label>Email
+<input type="email" placeholder="Email">
+</label>
+
+                </div>
+                <div class="large-6 medium-6 cell">
+                  <label>Password
+                     <input type="password" placeholder="Password">
+                   </label>
+                  <label>Retype Password                     <input type="password" placeholder="Password">
+                   </label>
+                  <label>Tell us about yourself
+                   <select>
+                   <option value="husker">Customer</option>
+                   <option value="husker">New Customer</option>
+                   </select>
+                   </label>
+                </div>
+                <div class="large-12 cell">
+
+
+                  <input type="submit" class="button secondary">
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="white callout violator hide-for-small-only" data-closable>
+            <img src="img/violator.jpg ">
+
+            <h5>SynergyDrive</h5>
+            <p>Maximize your MR workflow</p>
+            <a href="# " class="download-btn ">Download Whitepaper</a>
+            <button class="close-button " aria-label="Dismiss alert " type="button " data-close>
+    <span aria-hidden="true ">&times;</span>
+  </button>
+          </div>
 
 
 
