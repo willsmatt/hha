@@ -15,41 +15,40 @@
 <body>
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-      <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
-        <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
+      <div class="off-canvas position-right hide-for-large-only" id="offCanvasRight" data-off-canvas>
+        <ul class="vertical menu drilldown" data-drilldown data-parent-link="true" data-animation-duration="100" data-submenu-toggle="true">
           <li>
-            <a href="#">Hitachi Mobile</a>
+
+
+            <a href="#">Products</a>
             <ul class="menu vertical nested">
-              <li>
-                <a href="#">Item 1A</a>
+
+              <li><a href="#">CT</a>
                 <ul class="menu vertical nested">
-                  <li><a href="#">Item 1Ai</a>
-                    <ul class="menu vertical nested">
-                      <li><a href="#">Item 1Ai</a></li>
-                      <li><a href="#">Item 1Aii</a></li>
-                      <li><a href="#">Item 1Aiii</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="#">Item 1Ai</a></li>
                   <li><a href="#">Item 1Aii</a></li>
                   <li><a href="#">Item 1Aiii</a></li>
                 </ul>
               </li>
-              <li><a href="#">Item 1B</a></li>
-              <li><a href="#">Item 1C</a></li>
+              <li><a href="#">MR</a></li>
+              <li><a href="#">Ultrasound</a></li>
+              <li><a href="#">Digital Radiology</a></li>
+              <li><a href="#">Information Technology</a></li>
+              <li><a href="#">Optical Topography</a></li>
             </ul>
+
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+
           </li>
-          <li>
-            <a href="#">Item 2</a>
-            <ul class="menu vertical nested">
-              <li><a href="#">Item 2A</a></li>
-              <li><a href="#">Item 2B</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Item 3</a></li>
+
         </ul>
 
       </div>
       <div class="off-canvas-content" data-off-canvas-content>
+
         <div class="utility-header-top show-for-large">
           <div class="grid-x align-justify">
             <div class="utility-header-top-message">
@@ -69,7 +68,7 @@
           </div>
         </div>
 
-        <div id="test-nav" class="top-bar">
+        <div id="main-nav" class="top-bar show-for-large">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
               <li class="menu-text">Hitachi Healthcare America</li>
@@ -148,64 +147,148 @@
                 <div class="dropdown-pane bottom" id="customer-support" data-dropdown data-hover-delay="0" data-options="closeOnClick:true; hover: true; hoverPane: true; vOffset:11,">
                   <div class="grid-x expanded">
                     <div class="large-3 cell">
+                      <span class="nav-title"><a href="#">Customer Service</a></span>
+
+                    </div>
+                    <div class="large-3 cell">
+                      <span class="nav-title"><a href="#">Customer Account</a></span>
                       <ul class="menu vertical">
-                        <li><a href="#">no</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Product Manuals/Materials</a></li>
+                        <li><a href="#">Self Learning</a></li>
+                        <li><a href="#">E-Store</a></li>
                       </ul>
                     </div>
                     <div class="large-3 cell">
-                      <ul class="menu vertical">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
+                      <span class="nav-title"><a href="#">Architecty Account</a></span>
                     </div>
                     <div class="large-3 cell">
-                      <ul class="menu vertical">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
-                      <ul class="menu vertical">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
-                    </div>
-                    <div class="large-3 cell">
-                      <ul class="menu vertical">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
+                      <span class="nav-title"><a href="#">Advanced Marketing Materials</a></span>
+                      <span class="nav-title"><a href="#">Hitachi Institute for MR Technologiests</a></span>
                     </div>
                   </div>
 
                 </div>
               </li>
-              <li><a href="#">Contact</a></li>
+
+              <li class="mega-menu"><a href="#" data-toggle="contact-request">Contact</a>
+                <div class="dropdown-pane bottom" id="contact-request" data-dropdown data-hover-delay="0" data-options="closeOnClick:true; hover: true; hoverPane: true; vOffset:11">
+                  <form class="login-request">
+                    <div class="grid-x expanded">
+                      <div class="large-7 cell">
+                        <div class="grid-x grid-padding-x expanded">
+                          <div class="large-12 cell">
+                            <h3>Request Information</h3>
+                          </div>
+                          <div class="large-6 cell">
+                            <label>First Name
+                               <input type="text" placeholder="First Name">
+                             </label>
+                            <label>Last Name
+                               <input type="text" placeholder="Last Name">
+                             </label>
+                            <label>Email
+<input type="email" placeholder="Email">
+</label>
+                            <label>Phone
+<input type="text" placeholder="Phone">
+</label>
+                          </div>
+                          <div class="large-6 cell">
+                            <label>State
+  <select>
+    <option value="husker">Select State</option>
+    <option value="husker">Select Products</option>
+  </select>
+</label>
+                            <label>Zip Code
+         <input type="text" placeholder="Zip">
+       </label>
+                            <label>Company
+<input type="text" placeholder="Company">
+</label>
+                            <label>City
+<input type="text" placeholder="City">
+</label>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="large-5 cell">
+                        <div class="grid-x grid-padding-x expanded">
+                          <div class="large-12 cell">
+                            <h3>Product Information</h3>
+                            <p>I am interested in purchasing a Hitachi product and would like more information</p>
+                          </div>
+                          <div class="large-6 cell">
+                            <label>MRI
+  <select>
+    <option value="husker">Select Products</option>
+    <option value="husker">Select Products</option>
+  </select>
+</label>
+                            <label>Ultrasound
+<select>
+<option value="husker">Select Products</option>
+<option value="husker">Select Products</option>
+</select>
+</label>
+                            <label>X-Ray
+<select>
+<option value="husker">Select Products</option>
+<option value="husker">Select Products</option>
+</select>
+</label>
+
+
+                          </div>
+                          <div class="large-6 cell">
+                            <label>CT
+                            <select>
+                            <option value="husker">Select Products</option>
+                            <option value="husker">Select Products</option>
+                            </select>
+                            </label>
+                            <label>VNA
+  <select>
+    <option value="husker">Select Products</option>
+    <option value="husker">Select Products</option>
+  </select>
+</label>
+                            <input type="submit" class="button secondary">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                  </form>
+                </div>
+
+              </li>
               <li><a href="#">Login</a></li>
+
             </ul>
           </div>
 
         </div>
 
 
-        <div class="title-bar hide-for-medium">
+        <div class="title-bar hide-for-large">
           <div class="title-bar-left">
 
-            <span class="title-bar-title">Foundation</span>
+            <span class="title-bar-title">Hitachi Healthcare America</span>
           </div>
           <div class="title-bar-right">
             <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
           </div>
         </div>
-        <div id="product-detail" class="content-wrapper">
+        <div id="product-detail" class="content-wrapper womenshealth">
           <section class="page-header">
             <div class="grid-container">
               <div class="grid-x">
                 <div class="large-7">
+                  <div class="application-flag">Women's Health</div>
                   <h1>Arietta 70</h1>
                   <hr class="attract large">
                   <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor</p>
@@ -261,18 +344,34 @@
                     <div id="overview" class="grid-x grid-padding-x" data-magellan-target="overview">
                       <div class="large-12 cell">
                         <hr align="left" class="attract">
-                        <h2>Welcome to Hitachi</h2>
-                        <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed, venenatis at ipsum. Mauris id suscipit mauris. Pellentesque eleifend eleifend ex. Proin
-                          eu arcu maximus, mattis erat et, viverra neque. Fusce mollis libero eu nisi porttitor posuere. Duis vel finibus nunc. Etiam a lorem mi. Morbi congue consectetur lorem, eu consequat erat aliquam vestibulum. Maecenas at diam ac
-                          quam tristique facilisis non vitae mauris. Sed feugiat sit amet justo in ultricies. Donec hendrerit tincidunt massa, sed feugiat lorem cursus vel. Proin nec velit urna.</p>
+                        <h2>Overview</h2>
+                        <p>The ever-evolving healthcare industry demands efficiency in all aspects of patient care. In ultrasound, exceptional image quality without equally exceptional workflow and ergonomics is unacceptable. That is why the Arietta 70 was
+                          designed to provide maximum scanning comfort, user efficiency, and portability. From its compact footprint to its intuitive, time-saving user interface, the Arietta 70 was engineered to meet and exceed the needs of every women’s
+                          health professional.</p>
+                        <div class="grid-x grid-padding-x" data-magellan-target="overview">
+                          <div class="large-12 cell">
+                            <h3>Image Technology</h3>
+                            <p>Whether its source is a world class orchestra or advanced medical equipment, recording sound is an art form. It requires precision instrumentation to capture the most subtle details without introducing noise in the process.
+                              Arietta 70’s Symphonic Technology optimizes data fidelity along the entire signal handling chain, from transducer to display monitor.</p>
 
-                        <p>Aliquam erat odio, finibus a ultricies a, tempor eget ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla enim, sodales non interdum sit amet,
-                          porta sit amet diam. Integer elementum non tellus non faucibus. Aliquam sollicitudin tempor orci, sit amet tincidunt ligula consectetur ac. Pellentesque vulputate felis sed felis interdum malesuada. Quisque venenatis dolor efficitur,
-                          fringilla sapien quis, dapibus nunc. Nunc finibus id nibh vel sodales. Maecenas ac tellus fringilla, molestie nunc at, pellentesque turpis. Pellentesque non egestas erat, sed pharetra neque. Morbi molestie pellentesque congue.</p>
-                        <p><a href="#" class="button">Simple Button</a><br/>
-                          <a href="#" class="success button">Success Btn</a><br/>
-                          <a href="#" class="alert button">Alert Btn</a><br/>
-                          <a href="#" class="secondary button">Secondary Btn</a></p>
+                            <p>Multi-layered Crystal - Using multiple layers of crystal within each element, Hitachi Healthcare’s probes minimize signal attenuation during transmit and receive to increase penetration.</p>
+                            <p>Compound Pulse Wave Generator - CPWG+ is a unique transmission technology that allows Arietta 70 to generate pulses to the ideal theoretical waveform. As a result, the heat generation during electro-acoustical conversion is
+                              minimized. This allows the use of stronger pulses to improve penetration, contrast and spatial resolution, and signal-to-noise ratio.</p>
+                            <p>Pixel Focusing - Arietta 70 dynamically focuses at the pixel level improving resolution and image uniformity.</p>
+                            <p>Ultra Backend - The high-speed digital computing of the Ultra Backend fuels the various real-time image processing features of Arietta 70 of frame rate.</p>
+                            <p>IPS-Pro Display Monitor - Developed initially by Hitachi Displays, Ltd., In-Plane Switching (IPS) was the first LCD technology to improve viewing-angle. The Arietta 70’s IPS-Pro display doubles the half-contrast viewing angle
+                              of these displays while also improving contrast, black levels, and switching speed.</p>
+                          </div>
+                          <div class="large-12 cell">
+                            <h3>Ergonomics</h3> Arietta 70’s ergonomics address every point of interaction between the ultrasound and Sonographer. In addition to its moveable control panel, adjustable monitor, and portable frame, the Arietta supports a set of lightweight,
+                            ergonomically-contoured transducers to reduce the stress exerted on the Sonographer’s arm and hand.
+
+                            <h4>User-friendly operation panel</h4> Two-way multi rotary encoders enable the adjustment of many functions in one control, significantly reducing hand and arm movements. The large palm rest at the center of the operating console is designed to give optimum wrist
+                            support.
+
+                            <h4>Adjustable panel height for your ease of use</h4> The panel height can be lowered to 70 cm, allowing the operator to perform lower extremity examinations while the panel is comfortably within reach.
+                          </div>
+                        </div>
                       </div>
 
                     </div>
@@ -287,10 +386,71 @@
                 <div class="st-container">
                   <div class="grid-container">
                     <div id="gallery" class="grid-x grid-padding-x" data-magellan-target="gallery">
+
+                      <div class="large-12 cell">
+                        <hr align="left" class="attract">
+                        <h2>Image Gallery</h2>
+                      </div>
                       <div class="large-4 medium-6 small-12 cell">
                         <a class="card gallery">
                           <div class="card-title">
-                            <span>Radiology</span>
+                            <span>High-Resolution B-Mode Imaging</span>
+                          </div>
+
+                          <div class="card-section">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <span>2 Images</span>
+                          </div>
+                          <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="large-4 medium-6 small-12 cell">
+                        <a class="card gallery">
+                          <div class="card-title">
+                            <span>eFlow</span>
+                          </div>
+
+                          <div class="card-section">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <span>2 Images</span>
+                          </div>
+                          <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="large-4 medium-6 small-12 cell">
+                        <a class="card gallery">
+                          <div class="card-title">
+                            <span>Stic</span>
+                          </div>
+
+                          <div class="card-section">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <span>1 Image</span>
+                          </div>
+                          <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="large-4 medium-6 small-12 cell">
+                        <a class="card gallery">
+                          <div class="card-title">
+                            <span>Dual Gate Doppler</span>
+                          </div>
+
+                          <div class="card-section">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <span>1 Images</span>
+                          </div>
+                          <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="large-4 medium-6 small-12 cell">
+                        <a class="card gallery">
+                          <div class="card-title">
+                            <span>Real-time 3D/4D</span>
                           </div>
 
                           <div class="card-section">
@@ -304,49 +464,7 @@
                       <div class="large-4 medium-6 small-12 cell">
                         <a class="card gallery">
                           <div class="card-title">
-                            <span>Radiology</span>
-                          </div>
-
-                          <div class="card-section">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <span>11 Images</span>
-                          </div>
-                          <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
-                          </div>
-                        </a>
-                      </div>
-                      <div class="large-4 medium-6 small-12 cell">
-                        <a class="card gallery">
-                          <div class="card-title">
-                            <span>Radiology</span>
-                          </div>
-
-                          <div class="card-section">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <span>11 Images</span>
-                          </div>
-                          <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
-                          </div>
-                        </a>
-                      </div>
-                      <div class="large-4 medium-6 small-12 cell">
-                        <a class="card gallery">
-                          <div class="card-title">
-                            <span>Radiology</span>
-                          </div>
-
-                          <div class="card-section">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <span>11 Images</span>
-                          </div>
-                          <div class="img" style="background:url('http://www.ucl.ac.uk/dcd-brain-imaging/information-for-interested-parents/mri-scan/mri_parents/MRI_scan'); background-size:cover;">
-                          </div>
-                        </a>
-                      </div>
-                      <div class="large-4 medium-6 small-12 cell">
-                        <a class="card gallery">
-                          <div class="card-title">
-                            <span>Radiology</span>
+                            <span>4D Shading</span>
                           </div>
 
                           <div class="card-section">
@@ -362,6 +480,16 @@
 
 
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="row-wrapper">
+            <div class="st-o-container description">
+              <div class="main-container">
+                <div class="st-container">
+                  <div class="grid-container">
                     <div class="grid-x grid-padding-x">
                       <div class="large-12 cell">
                         <hr align="left" class="attract">
@@ -387,15 +515,18 @@
                       <div class="large-6 cell">
                         <h5>Title of spec</h5>
                         <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit
-                          amet vulputate sed</p>
+                          amet vulputate sed
+                        </p>
 
                         <h5>Title of spec</h5>
                         <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit
-                          amet vulputate sed</p>
+                          amet vulputate sed
+                        </p>
 
                         <h5>Title of spec</h5>
                         <p>Nulla cursus turpis in purus rhoncus, id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit amet vulputate sed id imperdiet quam cursus. Sed ac malesuada tortor. Aliquam neque tortor, pharetra sit
-                          amet vulputate sed</p>
+                          amet vulputate sed
+                        </p>
                       </div>
 
 
@@ -405,13 +536,130 @@
               </div>
             </div>
           </section>
+          <section class="row-wrapper">
+            <div class="st-o-container description">
+              <div class="main-container">
+                <div class="st-container">
+                  <div class="grid-container">
+                    <!--TRANSDUCERS -->
+                    <div id="transducers" class="grid-x grid-padding-x" data-magellan-target="transducers">
+                      <div class="large-12 cell">
+                        <hr align="left" class="attract">
+                        <h2>Transducers</h2>
+                      </div>
+                      <div class="large-3 medium-6 small-12 cell">
+                        <a class="card transducer">
+                          <div class="card-front">
+                            <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
 
+
+                            <div class="card-section text-center">
+                              <hr align="center" class="attract mini">
+                              <span>L55</span>
+                            </div>
+
+                          </div>
+                          <div class="card-back text-center">
+                            <div class="data">
+                              <hr align="center" class="attract mini">
+                              <p class="name">UST-5550-R</p>
+                              <p>Linear</p>
+                              <p>13-4 Mhz</p>
+                              <p>38mm Width</p>
+                              <span class="download-btn">More Info</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="large-3 medium-6 small-12 cell">
+                        <a class="card transducer">
+                          <div class="card-front">
+                            <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
+
+
+                            <div class="card-section text-center">
+                              <hr align="center" class="attract mini">
+                              <span>L55</span>
+                            </div>
+
+                          </div>
+                          <div class="card-back text-center">
+                            <div class="data">
+                              <hr align="center" class="attract mini">
+                              <p class="name">UST-5550-R</p>
+                              <p>Linear</p>
+                              <p>13-4 Mhz</p>
+                              <p>38mm Width</p>
+                              <span class="download-btn">More Info</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="large-3 medium-6 small-12 cell">
+                        <a class="card transducer">
+                          <div class="card-front">
+                            <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
+
+
+                            <div class="card-section text-center">
+                              <hr align="center" class="attract mini">
+                              <span>L55</span>
+                            </div>
+
+                          </div>
+                          <div class="card-back text-center">
+                            <div class="data">
+                              <hr align="center" class="attract mini">
+                              <p class="name">UST-5550-R</p>
+                              <p>Linear</p>
+                              <p>13-4 Mhz</p>
+                              <p>38mm Width</p>
+                              <span class="download-btn">More Info</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="large-3 medium-6 small-12 cell">
+                        <a class="card transducer">
+                          <div class="card-front">
+                            <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
+
+
+                            <div class="card-section text-center">
+                              <hr align="center" class="attract mini">
+                              <span>L55</span>
+                            </div>
+
+                          </div>
+                          <div class="card-back text-center">
+                            <div class="data">
+                              <hr align="center" class="attract mini">
+                              <p class="name">UST-5550-R</p>
+                              <p>Linear</p>
+                              <p>13-4 Mhz</p>
+                              <p>38mm Width</p>
+                              <span class="download-btn">More Info</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section class="row-wrapper">
             <div class="st-o-container description">
               <div class="main-container">
                 <div class="st-container">
                   <div class="grid-container">
                     <div id="downloads" class="grid-x grid-padding-x" data-magellan-target="downloads">
+                      <div class="large-12 cell">
+                        <hr align="left" class="attract">
+                        <h2>Downloads</h2>
+                      </div>
+
                       <div class="large-4 medium-6 small-12 cell flex-container">
                         <a class="card downloads">
                           <div class="card-title">
@@ -611,115 +859,7 @@
               </div>
             </div>
           </section>
-          <section class="row-wrapper">
-            <div class="st-o-container description">
-              <div class="main-container">
-                <div class="st-container">
-                  <div class="grid-container">
-                    <!--TRANSDUCERS -->
-                    <div id="transducers" class="grid-x grid-padding-x" data-magellan-target="transducers">
-                      <div class="large-3 medium-6 small-12 cell">
-                        <a class="card transducer">
-                          <div class="card-front">
-                            <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
 
-
-                            <div class="card-section text-center">
-                              <hr align="center" class="attract mini">
-                              <span>L55</span>
-                            </div>
-
-                          </div>
-                          <div class="card-back text-center">
-                            <div class="data">
-                              <hr align="center" class="attract mini">
-                              <p class="name">UST-5550-R</p>
-                              <p>Linear</p>
-                              <p>13-4 Mhz</p>
-                              <p>38mm Width</p>
-                              <span class="download-btn">More Info</span>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="large-3 medium-6 small-12 cell">
-                        <a class="card transducer">
-                          <div class="card-front">
-                            <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
-
-
-                            <div class="card-section text-center">
-                              <hr align="center" class="attract mini">
-                              <span>L55</span>
-                            </div>
-
-                          </div>
-                          <div class="card-back text-center">
-                            <div class="data">
-                              <hr align="center" class="attract mini">
-                              <p class="name">UST-5550-R</p>
-                              <p>Linear</p>
-                              <p>13-4 Mhz</p>
-                              <p>38mm Width</p>
-                              <span class="download-btn">More Info</span>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="large-3 medium-6 small-12 cell">
-                        <a class="card transducer">
-                          <div class="card-front">
-                            <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
-
-
-                            <div class="card-section text-center">
-                              <hr align="center" class="attract mini">
-                              <span>L55</span>
-                            </div>
-
-                          </div>
-                          <div class="card-back text-center">
-                            <div class="data">
-                              <hr align="center" class="attract mini">
-                              <p class="name">UST-5550-R</p>
-                              <p>Linear</p>
-                              <p>13-4 Mhz</p>
-                              <p>38mm Width</p>
-                              <span class="download-btn">More Info</span>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="large-3 medium-6 small-12 cell">
-                        <a class="card transducer">
-                          <div class="card-front">
-                            <div class="img" style="background:url('http://www.hitachi-aloka.com/assets/img/transducers/L55.png');"></div>
-
-
-                            <div class="card-section text-center">
-                              <hr align="center" class="attract mini">
-                              <span>L55</span>
-                            </div>
-
-                          </div>
-                          <div class="card-back text-center">
-                            <div class="data">
-                              <hr align="center" class="attract mini">
-                              <p class="name">UST-5550-R</p>
-                              <p>Linear</p>
-                              <p>13-4 Mhz</p>
-                              <p>38mm Width</p>
-                              <span class="download-btn">More Info</span>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
 
 

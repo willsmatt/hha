@@ -66,11 +66,17 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary  : #2D2D26,
-  secondary: #FA0026,
-  success  : #3adb76,
-  warning  : #ffae00,
-  alert    : #cc4b37,
+  primary       : #2D2D26,
+  secondary     : #FA0026,
+  success       : #3adb76,
+  warning       : #ffae00,
+  alert         : #cc4b37,
+  womenshealth  : #f69fbc,
+  radiology     : #1f568a,
+  surgery       : #0a9b8c,
+  cardiovascular: #8d6dd1,
+  urology       : #d44837,
+  woundcare     : #883001
 );
 $light-gray: #EAEAEA;
 $medium-gray: #cacaca;
@@ -295,7 +301,7 @@ $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;
 $closebutton-color-hover: $black; // 16. Drilldown
 // -------------
-$drilldown-transition: transform 0.15s linear;
+$drilldown-transition: transform 0.5s ease;
 $drilldown-arrows: true;
 $drilldown-padding: $global-menu-padding;
 $drilldown-nested-margin: 0;
@@ -403,7 +409,7 @@ $meter-fill-good: $success-color;
 $meter-fill-medium: $warning-color;
 $meter-fill-bad: $alert-color; // 25. Off-canvas
 // --------------
-$offcanvas-size: 250px;
+$offcanvas-size: 300px;
 $offcanvas-vertical-size: 250px;
 $offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);

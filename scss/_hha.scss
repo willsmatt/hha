@@ -8,6 +8,18 @@
 }
 
 .content-wrapper {
+  &.womenshealth {
+    .application-flag {
+      background : get-color('womenshealth');
+      position   : absolute;
+      top        : 0;
+      color      : $white;
+      font-weight: $global-weight-bold;
+      padding    : 0.5rem 1rem;
+      font-family: $header-font-family;
+    }
+  }
+
   .sticky-container {
     //position: fixed !important;
     height: auto !important;
@@ -42,7 +54,7 @@
     -moz-transition   : all 0.5s ease-out;
     -o-transition     : all 0.5s ease-out;
     transition        : all 0.5s ease-out;*/
-    border-top: 15px solid $dark-gray;
+    border-top: 15px solid get-color('womenshealth');
     @include breakpoint(large down) {
       width: 30%;
     }
@@ -118,6 +130,15 @@
   }
 }
 
+#main-nav .menu li > a {
+  line-height: 1.5;
+}
+
+.title-bar-left,
+.title-bar-right {
+  flex: auto;
+}
+
 .mega-menu {
   .dropdown-pane {
     width         : 100%;
@@ -173,6 +194,7 @@
         a {
           padding  : 0.3rem 1rem !important;
           font-size: 0.8rem;
+          //line-height: 0.8;
         }
       }
 
@@ -181,7 +203,7 @@
         color      : $black;
         font-size  : 0.9rem;
         transition : background 0.2s;
-
+        //line-height: 1.5;
         &:hover {
           background: get-color('secondary');
           color     : $white;
@@ -199,7 +221,7 @@
   > a::after {
     display     : block;
     position    : relative;
-    width       : 79px;
+    width       : 100%;
     height      : 13px;
     content     : '';
     bottom      : -15px;
@@ -210,14 +232,22 @@
   }
 
   > a.hover::after {
-    background       : url("../img/mega_tick.png");
-    background-repeat: no-repeat;
+    background         : url("../img/mega_tick.png");
+    background-repeat  : no-repeat;
+    background-position: top center;
   }
 
   .ultrasound-nav ul {
     float: left;
   }
 }
+
+.off-canvas {
+  border-left: solid 5px get-color('secondary');
+  background : $white;
+}
+
+.drilldown .is-drilldown-submenu {}
 
 .utility-header {
   width           : 100%;
@@ -603,7 +633,7 @@ section {
           position           : relative;
           float              : left;
           top                : 0;
-          background-size    : 80% !important;
+          background-size    : auto 95% !important;
           background-repeat  : no-repeat !important;
           background-position: center center !important;
         }
@@ -673,7 +703,11 @@ section {
 
     &.blur-card {
       position  : relative;
-      min-height: 250px;
+      min-height: 300px;
+
+      h4 {
+        font-size: 1.25rem;
+      }
 
       hr {
         margin-left  : auto !important;
@@ -683,12 +717,15 @@ section {
 
       .card-front {
         //position: absolute;
-        width : 100%;
-        height: 100%;
+        width              : 100%;
+        height             : 100%;
+        background-size    : cover !important;
+        background-repeat  : no-repeat !important;
+        background-position: center center !important;
 
         .card-section {
-          height  : 25%;
-          position: relative;
+          //height  : 25%;
+          position: absolute;
           bottom  : 0;
           width   : 100%;
           padding : 1rem;
@@ -697,13 +734,13 @@ section {
 
         .img {
           width              : 100%;
-          min-height         : 200px;
+          min-height         : 250px;
           position           : relative;
           float              : left;
           top                : 0;
-          background-size    : 80% !important;
+          background-size    : auto 95% !important;
           background-repeat  : no-repeat !important;
-          background-position: center center !important;
+          background-position: bottom center !important;
         }
       }
 
@@ -818,6 +855,10 @@ table td {
     &.section-padding {
       padding-top   : 125px;
       padding-bottom: 125px;
+      @include breakpoint(medium down) {
+        padding-top   : 55px;
+        padding-bottom: 55px;
+      }
     }
 
     h1,
@@ -837,6 +878,9 @@ table td {
   h2 {
     font-size     : 3rem !important;
     text-transform: uppercase;
+    @include breakpoint(small down) {
+      font-size: 2rem !important;
+    }
   }
 
   p {
@@ -872,11 +916,30 @@ table td {
 
 #case-studies {
   background: $black;
-  padding   : 40px;
+  //padding   : 40px;
+  .slick-dots {
+    bottom: 40px;
+  }
 
   .hha-slider {
     color     : #fff;
     min-height: 400px;
+
+    .slick-track {
+      height: 400px;
+    }
+
+    .slick-list {
+      height: 400px;
+    }
+
+    .slick-slide {
+      width              : 100%;
+      padding-top        : 40px;
+      background-size    : cover !important;
+      background-repeat  : no-repeat !important;
+      background-position: center center !important;
+    }
 
     .hha-slider-item {
       padding-top   : 40px;
