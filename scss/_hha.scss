@@ -130,6 +130,14 @@
   }
 }
 
+.drilldown {
+  .nav-sub-title {
+    a {
+      color: $medium-gray;
+    }
+  }
+}
+
 #main-nav .menu li > a {
   line-height: 1.5;
 }
@@ -245,6 +253,13 @@
 .off-canvas {
   border-left: solid 5px get-color('secondary');
   background : $white;
+}
+
+.corporate-header {
+  border-top      : solid 5px #e60027;
+  background-color: #f2f2f2;
+  height          : 50px;
+  padding         : 9px 1.5rem;
 }
 
 .drilldown .is-drilldown-submenu {}
@@ -502,6 +517,10 @@ section {
     border    : 0;
   }
 
+  h4 {
+    margin-top: 0.5rem !important;
+  }
+
   &.odd {
     background: #E5E5E5 !important;
   }
@@ -633,7 +652,7 @@ section {
           position           : relative;
           float              : left;
           top                : 0;
-          background-size    : auto 95% !important;
+          background-size    : auto 45% !important;
           background-repeat  : no-repeat !important;
           background-position: center center !important;
         }
@@ -873,6 +892,7 @@ table td {
 
 #home-hero {
   background: $black;
+  overflow  : hidden;
   //padding   : 40px;
   h1,
   h2 {
@@ -888,9 +908,12 @@ table td {
   }
 
   .hha-slider {
-    color: #fff;
+    color   : #fff;
+    overflow: hidden;
     //min-height: 100vh;
     .slick-slide {
+      overflow: hidden;
+
       .img-bg {
         background-size    : cover !important;
         background-repeat  : no-repeat !important;
@@ -914,11 +937,48 @@ table td {
   }
 }
 
+#gallery-slide {}
+
+.gallery-sidebar {
+  width     : 25%;
+  background: red;
+  float     : left;
+}
+
+.gallery-slider {
+  width: 75%;
+  float: left;
+  //height: 100% !important;
+  .slick-list {
+    //width : 100% !important;
+    //height: 100% !important;
+  }
+
+  .slick-track {
+    //width : 100% !important;
+    //height: 100% !important;
+    .slick-slide {
+      //width : 100% !important;
+      //height: 100% !important;
+    }
+  }
+}
+
 #case-studies {
   background: $black;
   //padding   : 40px;
   .slick-dots {
     bottom: 40px;
+  }
+
+  .st-container {
+    padding: inherit;
+  }
+
+  &.product-case-studies {
+    .slick-dots {
+      padding-right: 30%;
+    }
   }
 
   .hha-slider {

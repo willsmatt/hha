@@ -47,17 +47,28 @@ $(document).ready(function(){
   $('.hha-slider').slick({
     //setting-name: setting-value
     dots: true,
+    autoplay:true,
+    autoplaySpeed:6000,
+     speed: 1300,
 
   //fade: true,
   //cssEase: 'linear'
-  });
+});
+$('.gallery-slider').slick({
+  //setting-name: setting-value
+  dots: false,
+  arrows: true,
+//fade: true,
+//cssEase: 'linear'
+});
 
   //FULL SCREEN VIDEO
   vpw = window.innerWidth;
   vph = $(window).height();
   utih= $('.utility-header-top').outerHeight();
+  corh= $('.corporate-header').outerHeight();
   menh = $('#main-nav').outerHeight();
-  toth = (utih + menh)
+  toth = (utih + menh + corh)
   heroh = (vph - toth);
   $('#home-hero').height(heroh);
   $('.home-slider').height(heroh);
@@ -69,8 +80,9 @@ $(document).ready(function(){
     vpw = window.innerWidth;
     vph = $(window).height();
     utih= $('.utility-header-top').outerHeight();
+    corh= $('.corporate-header').outerHeight();
     menh = $('#main-nav').outerHeight();
-    toth = (utih + menh)
+    toth = (utih + menh + corh)
     heroh = (vph - toth);
     $('#home-hero').height(heroh);
       $('.home-slider').height(heroh);
